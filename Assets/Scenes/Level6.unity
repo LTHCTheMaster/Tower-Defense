@@ -575,22 +575,22 @@ MonoBehaviour:
     cost: 100
     upgradedPrefab: {fileID: 5875440210673596297, guid: 91904799da5c2c34fae9b2185bae3d1b,
       type: 3}
-    upgradeCost: 85
+    upgradeCost: 150
     name: turret
   missileLauncherTurret:
     prefab: {fileID: 800016515891481621, guid: 535a496f14d63d142baf27638f498b4e, type: 3}
-    cost: 250
+    cost: 275
     upgradedPrefab: {fileID: 800016515891481621, guid: fecf89e42fa9dfc4f9be7b1dc1358b09,
       type: 3}
-    upgradeCost: 245
+    upgradeCost: 270
     name: missile
   laserBeamerTurret:
     prefab: {fileID: 2476903220721139429, guid: f9b3845fcea57034d8bd72a526259a58,
       type: 3}
-    cost: 350
+    cost: 300
     upgradedPrefab: {fileID: 2476903220721139429, guid: bd5cfb052bbca134e8df4609307802dd,
       type: 3}
-    upgradeCost: 330
+    upgradeCost: 270
     name: laser
   teslaSecretTower:
     prefab: {fileID: 8432341029676013547, guid: 0f0e7582170ecd7428075d4e8b4a8f6a,
@@ -1966,7 +1966,7 @@ PrefabInstance:
     - target: {fileID: 7091362369074051323, guid: 99eb323ff15b46344b8febaf7b2f35f9,
         type: 3}
       propertyPath: m_Text
-      value: $350
+      value: $300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99eb323ff15b46344b8febaf7b2f35f9, type: 3}
@@ -2266,7 +2266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2292,7 +2292,7 @@ MonoBehaviour:
     L
 
 
-    5'
+    6'
 --- !u!222 &230485596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7772,7 +7772,7 @@ PrefabInstance:
     - target: {fileID: 7091362369074051323, guid: 99eb323ff15b46344b8febaf7b2f35f9,
         type: 3}
       propertyPath: m_Text
-      value: $250
+      value: $275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99eb323ff15b46344b8febaf7b2f35f9, type: 3}
@@ -9694,8 +9694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: MainMenu
   sceneFader: {fileID: 9210854516122740498}
-  nextLevel: Level6
-  levelToUnlock: 6
+  nextLevel: Level7
+  levelToUnlock: 7
 --- !u!1001 &937486651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13693,15 +13693,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1345792901}
   waves:
-  - enemy: {fileID: 8572659421033488365, guid: e13aefa06f3f89548bc708c764f1ebc6, type: 3}
-    count: 5
+  - enemy: {fileID: 8572659421033488365, guid: b088447e98ca2954a8fd079f2f246d15, type: 3}
+    count: 2
     rate: 2
-  - enemy: {fileID: 8572659421033488365, guid: e13aefa06f3f89548bc708c764f1ebc6, type: 3}
-    count: 9
+  - enemy: {fileID: 8572659421033488365, guid: b088447e98ca2954a8fd079f2f246d15, type: 3}
+    count: 3
     rate: 2
-  - enemy: {fileID: 8572659421033488365, guid: 3999b3c043c712a46be91e9ee63da071, type: 3}
-    count: 1
-    rate: 1
+  - enemy: {fileID: 8572659421033488365, guid: 417d9bbae1febae45ace756b7a44fcfe, type: 3}
+    count: 10
+    rate: 3
+  - enemy: {fileID: 8572659421033488365, guid: e13aefa06f3f89548bc708c764f1ebc6, type: 3}
+    count: 12
+    rate: 3
+  - enemy: {fileID: 8572659421033488365, guid: e13aefa06f3f89548bc708c764f1ebc6, type: 3}
+    count: 15
+    rate: 3
+  - enemy: {fileID: 8572659421033488365, guid: 417d9bbae1febae45ace756b7a44fcfe, type: 3}
+    count: 18
+    rate: 1.5
   spawnPoint: {fileID: 1612377408}
   timeBetweenWaves: 4
   waveCountdownTimer: {fileID: 63301335}
@@ -13752,8 +13761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75cc4bce96acdc64392639190e58fb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1500
-  startLives: 2
+  startMoney: 760
+  startLives: 3
 --- !u!114 &1345792901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13767,8 +13776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 135083762}
-  nextLevel: Level6
-  levelToUnlock: 6
+  nextLevel: Level7
+  levelToUnlock: 7
   sceneFader: {fileID: 9210854516122740498}
   completeLevelUi: {fileID: 935722911}
 --- !u!114 &1345792902

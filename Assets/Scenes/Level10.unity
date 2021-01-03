@@ -2292,7 +2292,7 @@ MonoBehaviour:
     L
 
 
-    5'
+    10'
 --- !u!222 &230485596
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9694,8 +9694,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: MainMenu
   sceneFader: {fileID: 9210854516122740498}
-  nextLevel: Level6
-  levelToUnlock: 6
+  nextLevel: MainMenu
+  levelToUnlock: 11
 --- !u!1001 &937486651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13699,8 +13699,11 @@ MonoBehaviour:
   - enemy: {fileID: 8572659421033488365, guid: e13aefa06f3f89548bc708c764f1ebc6, type: 3}
     count: 9
     rate: 2
+  - enemy: {fileID: 8572659421033488365, guid: e13aefa06f3f89548bc708c764f1ebc6, type: 3}
+    count: 18
+    rate: 2.5
   - enemy: {fileID: 8572659421033488365, guid: 3999b3c043c712a46be91e9ee63da071, type: 3}
-    count: 1
+    count: 3
     rate: 1
   spawnPoint: {fileID: 1612377408}
   timeBetweenWaves: 4
@@ -13752,8 +13755,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75cc4bce96acdc64392639190e58fb45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1500
-  startLives: 2
+  startMoney: 1750
+  startLives: 4
 --- !u!114 &1345792901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13767,8 +13770,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 135083762}
-  nextLevel: Level6
-  levelToUnlock: 6
+  nextLevel: MainMenu
+  levelToUnlock: 11
   sceneFader: {fileID: 9210854516122740498}
   completeLevelUi: {fileID: 935722911}
 --- !u!114 &1345792902

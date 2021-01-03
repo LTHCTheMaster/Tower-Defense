@@ -35,6 +35,11 @@ public class WaveSpawner : MonoBehaviour
             return;
         }
 
+        if(GameManager.gameIsOver)
+        {
+            return;
+        }
+
         if (waveIndex == waves.Length)
         {
             gameManager.WinLevel();
