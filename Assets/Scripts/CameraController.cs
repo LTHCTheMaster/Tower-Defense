@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour
         }
 
         //Avant
-        if(Input.GetKey(KeyCode.Z))
+        if(Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
@@ -33,7 +33,7 @@ public class CameraController : MonoBehaviour
 
 
         //Gauche
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }
